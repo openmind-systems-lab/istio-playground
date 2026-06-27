@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+
+# Finder
+Icon?
+._*
+
+# Thumbnails
+.Spotlight-V100
+.Trashes
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# Vim
+*.swp
+
+# Logs
+*.log
