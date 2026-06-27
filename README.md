@@ -76,16 +76,16 @@ Envoy is a high-performance Layer 7 proxy.
 By itself, Envoy does not provide a centralized management plane. Every Envoy instance must be configured individually using xDS APIs. Routing rules, certificates, retries, authorization and other policies must all be maintained manually.
 
 Istio builds a complete control plane on top of Envoy and exposes Kubernetes-native APIs for traffic management and security.
-```
-  Envoy                           Istio
-  ------------------------------- ---------------------------
-  High-performance proxy          Service mesh platform
-  Manual xDS configuration        Kubernetes-native CRDs
-  Manual traffic routing          VirtualService
-  Manual certificate management   Automatic mTLS
-  Manual authorization            AuthorizationPolicy
-  Individual proxy management     Centralized control plane
-```
+
+| Envoy | Istio |
+|------------|-------------|
+|  High-performance proxy   |       Service mesh platform|
+|  Manual xDS configuration |       Kubernetes-native CRDs |
+|  Manual traffic routing     |     VirtualService |
+|  Manual certificate management |  Automatic mTLS |
+|  Manual authorization          | AuthorizationPolicy |
+|  Individual proxy management   |  Centralized control plane |
+
 
 In short:
 
